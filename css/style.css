@@ -1,12 +1,17 @@
 
 p {
-    display: inline-block;
+    position: relative;
+    top: 60px;
 }
 body{
     margin: 0px;
+    text-align: center;
 }
 h1 {
     margin: 0px;
+    position: relative;
+    top: 59px;
+
 }
 .top_container {
     background-color: #D2E9E9;
@@ -15,15 +20,21 @@ h1 {
     height: 200px;
     width: 200px;
     background-color: red;
-    border: solid;
-    border-width: 20px;
-    margin-left: 260px;
+    position: absolute;
+    left: 200px;
+    top: 720px;
 }
 .bottom_container{
     height: 200px;
     width: 200px;
     background-color: blue;
-    border: solid;
-    border-width: 10px;
-    margin: 0px 0px 0px 500px
+
+}
+.top_cloud{
+    position: absolute;
+    margin-left: 10%;
+
+}
+.bot_cloud{
+    position: absolute;
 }
