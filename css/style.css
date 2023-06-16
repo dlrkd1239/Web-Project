@@ -1,6 +1,4 @@
 
-
-
 p {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -8,15 +6,20 @@ body{
     margin: 0px;
     text-align: center;
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 200%;
+    font-size: 150%;
 
 }
 h1 {
     margin: 50px auto 0 auto ;
     font-family: 'Sacramento', cursive;
+    /*
+    px = 절대적 단위라서 확대 축소가 안먹고 고정됨
+    em, % 등은 상대적으로 가능한 단위라서 확대 축소가 먹힘
+    rem은 부모와 관계없이 폰트 크기를 바꿀 수 있음.
     font-size: 5.625em;
     font-size: 90px;
     font-size: 562.5%
+    */
     font-size: 5.625rem;
     color: #66BFBF;
     line-height: 2;
@@ -33,19 +36,44 @@ h3{
 }
 a{
     color: #11999E
+
 }
+/*
+clear = 그쪽 방향으로 아무 것도 없게 만듦.
+.skill_java_disc{
+        clear: left;
+    }
 
-
+ .skill_python_disc{
+     clear: right;
+    }
+*/
+.img_java{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.img_python{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+.skill_row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
 .top_container {
     background-color: #D2E9E9;
     padding-top: 100px;
     position: relative;
 }
-.middle_container{
-
+.middle-container{
+    margin-bottom: 50px;
 }
-.bottom_container{
-
+.bottom-container{
+    background-color: #66BFBF;
 
 }
 .top_cloud{
@@ -58,4 +86,35 @@ a{
     position: absolute;
     left: 300px;
     bottom: 300px;
+}
+.name-surname{
+    color: #EAF6F6;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 100px auto 100px auto;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
 }
